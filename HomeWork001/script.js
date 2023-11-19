@@ -41,3 +41,15 @@
 //     button.innerHTML = 'Текст отправлен'    
 // };
 
+// const arr = ['Лист 1', 'Лист 2', 'Лист 3'];
+
+// const ulElement = document.createElement('ul');
+
+// for (let item in arr) {
+//     let liElement = document.createElement('li');
+//     liElement.innerHTML = arr[item];
+//     ulElement.appendChild(liElement);
+// }
+
+// divEl.appendChild(ulElement);
+
