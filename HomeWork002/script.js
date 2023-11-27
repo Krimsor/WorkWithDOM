@@ -97,28 +97,28 @@
 // Добавьте текст для кнопки “Отправить”
 // При клике на данную кнопку необходимо чтобы текст поменялся на “Текст отправлен”
 
-const input = document.querySelector("form input[type='text']");
-const button = document.querySelector("button.btn");
+// const input = document.querySelector("form input[type='text']");
+// const button = document.querySelector("button.btn");
 
-let delButton = document.createElement("button");
-delButton.innerHTML = "Delete H2";
-button.parentElement.appendChild(delButton);
-let counter = 0;
+// let delButton = document.createElement("button");
+// delButton.innerHTML = "Delete H2";
+// button.parentElement.appendChild(delButton);
+// let counter = 0;
 
 
-button.addEventListener("click", () => {
-    if (!input.value) {
-        const h2 = document.createElement('h2');
-        h2.innerHTML = "Some Text " + counter;
-        button.parentElement.appendChild(h2);
-        input.style.border = "1px solid red";
-        counter++;
-    }
-});
+// button.addEventListener("click", () => {
+//     if (!input.value) {
+//         const h2 = document.createElement('h2');
+//         h2.innerHTML = "Some Text " + counter;
+//         button.parentElement.appendChild(h2);
+//         input.style.border = "1px solid red";
+//         counter++;
+//     }
+// });
 
-delButton.addEventListener("click", () => {
-    let h2 = document.querySelectorAll("form h2");
-    if (h2.length > 0) {
-        h2[h2.length - 1].remove();
-    }
-});
+// delButton.addEventListener("click", () => {
+//     let h2 = document.querySelectorAll("form h2");
+//     if (h2.length > 0) {
+//         h2[h2.length - 1].remove();
+//     }
+// });
