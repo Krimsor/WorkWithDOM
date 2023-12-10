@@ -8,6 +8,8 @@ let btnPlayEl = document.createElement("div");
 btnPlayEl.classList.add("btnPlay");
 let btnPauseEl = document.createElement("div");
 btnPauseEl.classList.add("btnPause");
+let btnStopEl = document.createElement("div");
+btnStopEl.classList.add("btnStop");
 
 btnPlayEl.addEventListener("click", () => {
     playPanel.play();
@@ -15,6 +17,11 @@ btnPlayEl.addEventListener("click", () => {
 
 btnPauseEl.addEventListener("click", () => {
     playPanel.pause();
+});
+
+btnStopEl.addEventListener("click", () => {
+    playPanel.pause();
+    playPanel.currentTime = 0;
 });
 
 let volumeInput = document.createElement("input");
@@ -30,6 +37,7 @@ volumeInput.addEventListener("change", (e) => {
 
 btnPanel.appendChild(btnPlayEl);
 btnPanel.appendChild(btnPauseEl);
+btnPanel.appendChild(btnStopEl);
 btnPanel.appendChild(volumeInput);
 playerEl.appendChild(playPanel);
 playerEl.appendChild(btnPanel);

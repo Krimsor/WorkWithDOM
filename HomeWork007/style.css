@@ -20,6 +20,14 @@
     cursor: pointer;
 }
 
+.btnStop {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url(assets/stop_btn.png);
+    cursor: pointer;
+}
+
 .videoBox {
     width: 500px;
 }
